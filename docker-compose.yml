@@ -35,7 +35,7 @@ services:
       - kanban-app
   
   kanban-pgadmin:
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:6.18
     container_name: kanban-pgadmin
     restart: always # fixes NetworkError when kanban-postgres is not ready when kanban-pgadmin starts
     volumes:
